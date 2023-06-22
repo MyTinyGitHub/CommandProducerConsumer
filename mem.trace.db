@@ -1,0 +1,196 @@
+06-15 17:07:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SUSER" not found; SQL statement:
+INSERT INTO SUSER (USER_ID, USER_GUID, USER_NAME) VALUES (1, a1, Robert); [42102-175]
+06-15 17:08:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SUSERS" already exists; SQL statement:
+create table SUSERS(USER_ID int, USER_GUID varchar(20), USER_NAME varchar(20)) [42101-175]
+06-15 17:08:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "A1" not found; SQL statement:
+INSERT INTO SUSERS (USER_ID, USER_GUID, USER_NAME) VALUES (1, a1, Robert); [42122-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:271)
+	at org.h2.command.Parser.prepareCommand(Parser.java:240)
+	at org.h2.engine.Session.prepareLocal(Session.java:436)
+	at org.h2.engine.Session.prepareCommand(Session.java:379)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1138)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:168)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:156)
+	at database.Database.addSUser(Database.java:45)
+	at Main.main(Main.java:14)
+06-15 17:11:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SUSERS" already exists; SQL statement:
+create table SUSERS(USER_ID int, USER_GUID varchar(20), USER_NAME varchar(20)) [42101-175]
+06-15 17:11:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "A1" not found; SQL statement:
+INSERT INTO SUSERS VALUES (1, a1, Robert); [42122-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:271)
+	at org.h2.command.Parser.prepareCommand(Parser.java:240)
+	at org.h2.engine.Session.prepareLocal(Session.java:436)
+	at org.h2.engine.Session.prepareCommand(Session.java:379)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1138)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:168)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:156)
+	at database.Database.addSUser(Database.java:45)
+	at Main.main(Main.java:14)
+06-15 17:12:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SUSERS" already exists; SQL statement:
+create table SUSERS(USER_ID int, USER_GUID varchar(20), USER_NAME varchar(20)) [42101-175]
+06-15 17:12:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "A1" not found; SQL statement:
+INSERT INTO SUSERS (USER_ID, USER_GUID, USER_NAME) VALUES (1, a1, martin); [42122-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:271)
+	at org.h2.command.Parser.prepareCommand(Parser.java:240)
+	at org.h2.engine.Session.prepareLocal(Session.java:436)
+	at org.h2.engine.Session.prepareCommand(Session.java:379)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1138)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:168)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:156)
+	at database.Database.addSUser(Database.java:45)
+	at Main.main(Main.java:14)
+06-15 17:12:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SUSERS" already exists; SQL statement:
+create table SUSERS(USER_ID int, USER_GUID varchar(225), USER_NAME varchar(225)) [42101-175]
+06-15 17:12:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "A1" not found; SQL statement:
+INSERT INTO SUSERS (USER_ID, USER_GUID, USER_NAME) VALUES (1, a1, martin); [42122-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:271)
+	at org.h2.command.Parser.prepareCommand(Parser.java:240)
+	at org.h2.engine.Session.prepareLocal(Session.java:436)
+	at org.h2.engine.Session.prepareCommand(Session.java:379)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1138)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:168)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:156)
+	at database.Database.addSUser(Database.java:45)
+	at Main.main(Main.java:14)
+06-15 17:13:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SUSERS" already exists; SQL statement:
+create table SUSERS(USER_ID int, USER_GUID varchar(225), USER_NAME varchar(225)) [42101-175]
+06-15 17:17:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SUSERS" already exists; SQL statement:
+create table SUSERS(USER_ID int, USER_GUID varchar(225), USER_NAME varchar(225)) [42101-175]
+06-15 17:17:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Column "USER_IDUSER_GUIDUSER_NAME" not found; SQL statement:
+INSERT INTO SUSERS ( USER_IDUSER_GUIDUSER_NAME) VALUES ( 1,'a1','Robert'); [42122-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.table.Table.getColumn(Table.java:626)
+	at org.h2.command.Parser.parseColumn(Parser.java:826)
+	at org.h2.command.Parser.parseColumnList(Parser.java:811)
+	at org.h2.command.Parser.parseInsert(Parser.java:1004)
+	at org.h2.command.Parser.parsePrepared(Parser.java:394)
+	at org.h2.command.Parser.parse(Parser.java:298)
+	at org.h2.command.Parser.parse(Parser.java:270)
+	at org.h2.command.Parser.prepareCommand(Parser.java:235)
+	at org.h2.engine.Session.prepareLocal(Session.java:436)
+	at org.h2.engine.Session.prepareCommand(Session.java:379)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1138)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:168)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:156)
+	at database.Database.addSUser(Database.java:60)
+	at Main.main(Main.java:14)
+06-15 17:18:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SUSERS" already exists; SQL statement:
+create table SUSERS(USER_ID int, USER_GUID varchar(225), USER_NAME varchar(225)) [42101-175]
+06-15 17:18:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO SUSERS (  USER_ID USER_GUID[*] USER_NAME) VALUES ( 1,'a1','Robert');"; expected ",, )"; SQL statement:
+INSERT INTO SUSERS (  USER_ID USER_GUID USER_NAME) VALUES ( 1,'a1','Robert'); [42001-175]
+06-15 17:18:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SUSERS" already exists; SQL statement:
+create table SUSERS(USER_ID int, USER_GUID varchar(225), USER_NAME varchar(225)) [42101-175]
+06-15 17:41:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USERS" not found; SQL statement:
+INSERT INTO USERS ( USER_ID ,USER_GUID ,USER_NAME) VALUES ( 1,'a1','Robert'); [42102-175]
+06-15 17:41:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USERS" not found; SQL statement:
+SELECT USER_ID, USER_GUID, USER_NAME FROM USERS [42102-175]
+06-15 17:42:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USERS" not found; SQL statement:
+drop table USERS [42102-175]
+06-15 17:42:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USERS" not found; SQL statement:
+INSERT INTO USERS ( USER_ID ,USER_GUID ,USER_NAME) VALUES ( 1,'a1','Robert'); [42102-175]
+06-15 17:42:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USERS" not found; SQL statement:
+SELECT USER_ID, USER_GUID, USER_NAME FROM USERS [42102-175]
+06-15 17:45:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USERS" not found; SQL statement:
+drop table USERS [42102-175]
+06-15 17:45:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Unknown data type: ","; SQL statement:
+CREATE TABLE USERS( USER_IDint, USER_GUIDvarchar(20), USER_NAMEvarchar(20) [50004-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:3853)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:3716)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5525)
+	at org.h2.command.Parser.parseCreate(Parser.java:4003)
+	at org.h2.command.Parser.parsePrepared(Parser.java:343)
+	at org.h2.command.Parser.parse(Parser.java:298)
+	at org.h2.command.Parser.parse(Parser.java:270)
+	at org.h2.command.Parser.prepareCommand(Parser.java:235)
+	at org.h2.engine.Session.prepareLocal(Session.java:436)
+	at org.h2.engine.Session.prepareCommand(Session.java:379)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1138)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:168)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:156)
+	at database.Database.createUsersTable(Database.java:51)
+	at Main.main(Main.java:10)
+06-15 17:45:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USERS" not found; SQL statement:
+INSERT INTO USERS ( USER_ID ,USER_GUID ,USER_NAME) VALUES ( 1,'a1','Robert'); [42102-175]
+06-15 17:45:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USERS" not found; SQL statement:
+SELECT USER_ID, USER_GUID, USER_NAME FROM USERS [42102-175]
+06-15 17:45:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Unknown data type: ","; SQL statement:
+CREATE TABLE USERS( USER_IDint, USER_GUIDvarchar(20), USER_NAMEvarchar(20) [50004-175]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:332)
+	at org.h2.message.DbException.get(DbException.java:172)
+	at org.h2.message.DbException.get(DbException.java:149)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:3853)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:3716)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:5525)
+	at org.h2.command.Parser.parseCreate(Parser.java:4003)
+	at org.h2.command.Parser.parsePrepared(Parser.java:343)
+	at org.h2.command.Parser.parse(Parser.java:298)
+	at org.h2.command.Parser.parse(Parser.java:270)
+	at org.h2.command.Parser.prepareCommand(Parser.java:235)
+	at org.h2.engine.Session.prepareLocal(Session.java:436)
+	at org.h2.engine.Session.prepareCommand(Session.java:379)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1138)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:168)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:156)
+	at database.Database.createUsersTable(Database.java:51)
+	at Main.main(Main.java:10)
+06-15 17:45:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USERS" not found; SQL statement:
+INSERT INTO USERS ( USER_ID ,USER_GUID ,USER_NAME) VALUES ( 1,'a1','Robert'); [42102-175]
+06-15 17:45:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USERS" not found; SQL statement:
+SELECT USER_ID, USER_GUID, USER_NAME FROM USERS [42102-175]
+06-15 17:46:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE USERS( USER_ID INT, USER_GUID VARCHAR(20), USER_NAME VARCHAR(20) "; expected "FOR, UNSIGNED, NOT, NULL, AS, DEFAULT, GENERATED, NOT, NULL, AUTO_INCREMENT, BIGSERIAL, SERIAL, IDENTITY, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE USERS( USER_ID int, USER_GUID varchar(20), USER_NAME varchar(20) [42001-175]
+06-15 17:46:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USERS" not found; SQL statement:
+INSERT INTO USERS ( USER_ID ,USER_GUID ,USER_NAME) VALUES ( 1,'a1','Robert'); [42102-175]
+06-15 17:46:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USERS" not found; SQL statement:
+SELECT USER_ID, USER_GUID, USER_NAME FROM USERS [42102-175]
